@@ -1,3 +1,54 @@
 html {
-    background-color: red;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #991B1B;
+    color: #FAFAFA;
+}
+
+.page-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#icon-img {
+    min-width: 64px;
+    max-width: 128px;
+    min-height: 64px;
+    max-height: 128px;
+}
+
+.nav-search {
+    display: flex;
+    align-items: center;
+}
+
+.nav-search input,
+.nav-search img {
+    height: 24px;
+}
+
+.nav-search input {
+    padding: 3px;
+}
+
+.nav-search button {
+    background-color: black;
+    border: none;
+        cursor: pointer;
+    padding: 3px;
+}
+
+.nav-search img {
+    width: 24px;
+}
+   
