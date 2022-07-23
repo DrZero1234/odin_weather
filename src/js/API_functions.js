@@ -21,6 +21,8 @@ const test_api = (city_name, key) => {
       throw new Error("Invalid city or connection error");
     })
     .then(function (json_data) {
+      // TODO Detailed forecast - humidity, wind-speed (m/s), cloudiness (%),
+
       const weather_data_array = [];
       console.log(json_data);
       const city = json_data.city.name;
@@ -56,13 +58,7 @@ const test_api = (city_name, key) => {
         console.log(day_str);
         // Temperatures
         const temperature = Math.round(json_data.list[i].main.temp);
-        const min_temp = Math.round(json_data.list[i].main.temp_min);
-        const max_temp = Math.round(json_data.list[i].main.temp_max);
-        weather_data.temperature = {
-          avg_temp: temperature,
-          min_temp: min_temp,
-          max_temp: max_temp,
-        };
+        weather_data.temperature = temperature;
 
         // Short weather description
         const weather_description =
