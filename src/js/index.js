@@ -1,9 +1,6 @@
 import "../css/style.css";
-import {
-  get_api_key,
-  test_api,
-  get_random_city,
-} from "./API_functions";
+import { get_api_key, test_api } from "./API_functions";
+import { get_random_city } from "./Other_functions";
 
 const search_bar = document.getElementById("search-text");
 const search_btn = document.getElementById("search-btn");
