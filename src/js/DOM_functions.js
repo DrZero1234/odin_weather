@@ -1,0 +1,1 @@
+function display_weather_cards(weather_data_dict)
