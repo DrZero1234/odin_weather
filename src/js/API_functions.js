@@ -1,4 +1,5 @@
 import { get_day_name } from "./Other_functions";
+import { clear_section } from "./DOM_functions";
 
 const get_api_key = () => "58870e7945eeb6b9b2d5e086112bce8c";
 
@@ -33,6 +34,7 @@ const test_api = (city_name, key) => {
       CITY_NAME_HTML.textContent = city;
 
       // Getting the weather of 5 days
+      clear_section(WEATHER_FORECAST_HTML);
       for (let i = 0; i < json_data.list.length; i += 8) {
         // adding the main data
         const weather_data = {};
